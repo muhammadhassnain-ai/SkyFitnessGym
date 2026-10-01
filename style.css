@@ -37,11 +37,11 @@ body{background:#0a0a0a;color:#fff}
 
 /* TRAINERS */
 .trainer-grid{display:grid;gap:25px}
-/*.trainer-card{background:#151515;border-radius:15px;padding:20px;border:10px solid #222}*/
-.trainer-card img{width:100%; height:550px; object-fit:cover; margin-top: 50px; border-radius: 10px;margin-bottom:10px; align-items: center;}
-.trainer-card span{color:var(--main);font-size:14px;}
+.trainer-card {width: 100%;max-width: 310px; /* Perfect size for 1 trainer */margin: 30px auto; /* Centers it */background: #1a1a1a;border-radius: 16px;overflow: hidden;border: 1px solid #333;}
+.trainer-card img {width: 100%;height: 420px;object-fit: cover; /* FIXES your stretch problem */object-position: top center;display: block;}
+.trainer-card span{color:var(--main);font-size:14px;margin-left: 1.3cm}
 .t-social{margin-top:12px}.t-social a{color:#888;margin:0 8px;font-size:18px}.t-social a:hover{color:var(--main)}
-.trainer-card h3{ font-size: 27px;}
+.trainer-card h3{ font-size: 27px;margin-top: 0.5cm; margin-left: 1.3cm;}
 
 /* PLANS */
 .plans{background:#111}
